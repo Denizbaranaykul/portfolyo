@@ -1,0 +1,179 @@
+/* Genel reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+
+
+.logo {
+  width: 50px;
+}
+
+.liste {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+/* Slider */
+.slider {
+  top: 0px;
+  position: relative;
+  height: 800px;
+  width: 100%;  
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Butonlar */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Başta şeffaf olacak */
+header {
+  position: fixed;   
+  top: 0;           
+  left: 0;
+  width: 100%;       
+  z-index: 1000;
+  transition: 0.4s ease;    
+  background: transparent; 
+  padding: 15px 30px;
+}
+
+/* Scroll sonrası siyah olacak */
+header.scrolled {
+  background: #222;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Linkler */
+.liste a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  background: transparent; 
+}
+
+.liste a:hover {
+  color: #ff9800;
+}
+
+.Portfolyo{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  background: transparent; 
+}
+
+/* sliderın içinde ki yazılar*/
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.slider-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.slider-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Keşfet butonu */
+.discover-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background: #e68900;
+}
+.about{
+  background-color: rgba(131, 135, 135, 0.356);
+}
+
+.about-text{
+  position: relative;
+  top: 50%;
+  left: 25%;
+  color: rgba(35, 32, 32, 0.312);
+}
+
+.gradient-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #23221f, #ff3c2e, #ffa200);
+  -webkit-background-clip: text; /* Safari ve Chrome için */
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  left: 43%;
+
+}
