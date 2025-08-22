@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
+  scroll-behavior: smooth;
 }
 
 
@@ -31,7 +32,12 @@ body {
   width: 100%;  
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Varsayılan gradient arka plan */
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Resim arka planı için - aşağıdaki satırın yorumunu kaldırın ve resim URL'sini ekleyin */
+  /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat; */
+  
   display: flex;
   align-items: center;
   justify-content: center;
