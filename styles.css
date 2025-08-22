@@ -29,19 +29,12 @@ body {
   position: relative;
   height: 800px;
   width: 100%;  
-  overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.slides {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
-  transition: transform 0.9s ease-in-out;
-}
-
-.slides img {
-  width: 100%;
-  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Butonlar */
