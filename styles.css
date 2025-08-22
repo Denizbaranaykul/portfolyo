@@ -154,98 +154,154 @@ header.scrolled {
 .discover-btn:hover {
   background: #e68900;
 }
+
+/* Hakkımda bölümü */
 .about{
-  background-color: rgba(131, 135, 135, 0.356);
-  height: 600px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 0;
+  min-height: 100vh;
 }
 
-.about-text{
-  position: relative;
-  top: 3%;
-  left: 25%;
-  color: rgba(35, 32, 32, 0.312);
+.about-text {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gradient-text {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #23221f, #ff3c2e, #ffa200);
-  -webkit-background-clip: text; /* Safari ve Chrome için */
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   background-clip: text;
   color: transparent;
-  position: relative;
-  left: 43%;
-
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.pp img{
-  position: relative;
-  top: 30px;
-  left: 20%;
-  width: 350px;
-  border-radius: 20%;
+/* Ana container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Profil fotoğrafı */
+.pp {
+  display: flex;
+  justify-content: center;
+}
+
+.pp img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-.pp img:hover{
-    transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+.pp img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Bilgi bölümü */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-who {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .about-content {
-  position: relative;
-  width: 600px;
-  left: 16%;
-  background-color: aliceblue;
-  flex-wrap: wrap;
+  background: white;
   padding: 20px;
-  border: 2px solid #333;   
-  border-radius: 12px;      
-}
-.about-content p{
-  font-size: 26px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  line-height: 1.6;
 }
 
-.about-write{
-  display: flex;             
-  align-items: center;      
-  gap: 20px;                
-  flex-wrap: wrap;           
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-.techno h1{
-  position: relative;
-  bottom: 40px;
-  left: 61%;
-  color: rgb(23, 0, 126);
+.about-content p:last-child {
+  margin-bottom: 0;
 }
-.techno-button{
-  width: 400px;
-  flex-wrap: wrap;
-  
-  position: relative;
-  left: 61%;
-  bottom: 30px;
+
+/* Teknolojiler bölümü */
+.techno h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
-.techno-button button{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #e68900;
-  color: #f4f4f4;
-  border-radius: 12px;
+
+.techno-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.techno-grid button {
+  padding: 12px 20px;
   border: none;
-  padding: 8px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.techno-grid button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
   
-}
-.techno-button button:hover{
-      transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-.about-who{
-  font-size: 34px;
-  position: relative;
-  bottom: 180px;
-  left: 43%;
-  color:rgb(23, 0, 126) ;
+  .gradient-text {
+    font-size: 2rem;
+  }
+  
+  .about-who {
+    font-size: 2rem;
+  }
+  
+  .pp img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .techno-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
 }
