@@ -16,9 +16,9 @@
           Portfolyo
         </a>
         <ul class="liste">
-          <a href="">Hakkımda</a>
-          <a href="">Projeler</a>
-          <a href="">İletişim</a>
+          <a href="#about">Hakkımda</a>
+          <a href="#projects">Projeler</a>
+          <a href="#contact">İletişim</a>
         </ul>
       
       </nav>
@@ -26,50 +26,190 @@
 
     <main>
       <div class="slider">
-        <div class="slides">
-         
-          <img src="https://picsum.photos/1600/800?random=1" alt="1">
-          <img src="https://picsum.photos/1600/800?random=2" alt="2">
-          <img src="https://picsum.photos/1600/800?random=3" alt="3">
-          <img src="https://picsum.photos/1600/800?random=4" alt="4">
-
-        </div>
         <div class="slider-text">
           <h1>Merhaba, Ben Deniz Baran Aykul</h1>
           <h2>Yazılım çözümleri üreticisi</h2>
-          <button class="discover-btn">Keşfet</button>
+          <button class="discover-btn" onclick="scrollToSection('about')">Keşfet</button>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <h1 class="gradient-text">Hakkımda</h1>
         <h2 class="about-text">Teknoloji tutkunu bir geliştirici olarak, modern web çözümleri üretiyorum</h2>
-        <div class="about-write">
+        
+        <div class="about-container">
           <div class="pp">
             <img src="WhatsApp Image 2025-08-17 at 00.36.03 (1).jpeg" alt="" >
           </div>
-          <h2 class="about-who"> Ben Kimim ?</h2>           
+          
+          <div class="about-info">
+            <h2 class="about-who">Ben Kimim?</h2>           
             <div class="about-content">
-              <p>5+ yıllık deneyime sahip bir full-stack geliştirici olarak, kullanıcı odaklı ve modern web uygulamaları geliştiriyorum. Sürekli öğrenme ve yenilikçi çözümler üretme konusunda tutkulu bir teknoloji sevdalısıyım.
-              Frontend ve backend teknolojilerinde derinlemesine bilgi sahibiyim. Clean code yazma, performans optimizasyonu ve kullanıcı deneyimi tasarımı konularında uzmanım.</p>
+              <p>5+ yıllık deneyime sahip bir full-stack geliştirici olarak, kullanıcı odaklı ve modern web uygulamaları geliştiriyorum. Sürekli öğrenme ve yenilikçi çözümler üretme konusunda tutkulu bir teknoloji sevdalısıyım.</p>
+              <p>Frontend ve backend teknolojilerinde derinlemesine bilgi sahibiyim. Clean code yazma, performans optimizasyonu ve kullanıcı deneyimi tasarımı konularında uzmanım.</p>
             </div>
-
+            
+            <div class="techno">
+              <h3>Teknolojiler & Yetenekler</h3>
+              <div class="techno-grid">
+                <button>Flutter</button>
+                <button>C#</button>
+                <button>Objective-C</button>
+                <button>JavaScript</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>SQL</button>
+                <button>GitHub</button>
+              </div>
+            </div>
+          </div>
         </div>
-          <div class="techno">
-            <h1>Teknolojiler & Yetenekler</h1>
-            <div class="techno-button">
-              <button>Flutter</button>
-              <button>C#</button>
-              <button>object C</button>
-              <button>Javascript</button>
-              <button>Html</button>
-              <button>Css</button>
-              <button>Sql</button>
-              <button>GitHub</button>
+      </div>
+
+      <div class="projects" id="projects">
+        <h1 class="gradient-text">Projelerim</h1>
+        <h2 class="projects-text">Geliştirdiğim bazı projeler ve çalışmalar</h2>
+        
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-Ticaret Projesi">
+            </div>
+            <div class="project-content">
+              <h3>E-Ticaret Platformu</h3>
+              <p>Modern ve kullanıcı dostu bir e-ticaret platformu. React ve Node.js kullanılarak geliştirildi.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
             </div>
           </div>
 
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mobil Uygulama">
+            </div>
+            <div class="project-content">
+              <h3>Mobil Fitness Uygulaması</h3>
+              <p>Flutter ile geliştirilmiş kapsamlı fitness takip uygulaması. Antrenman planları ve beslenme takibi.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Dashboard">
+            </div>
+            <div class="project-content">
+              <h3>Yönetim Paneli</h3>
+              <p>İşletmeler için geliştirilmiş kapsamlı yönetim paneli. Analitik ve raporlama özellikleri.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI Projesi">
+            </div>
+            <div class="project-content">
+              <h3>AI Chatbot Sistemi</h3>
+              <p>Yapay zeka destekli müşteri hizmetleri chatbot sistemi. Natural language processing kullanılarak geliştirildi.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blockchain Projesi">
+            </div>
+            <div class="project-content">
+              <h3>Blockchain Wallet</h3>
+              <p>Güvenli kripto para cüzdanı uygulaması. Multi-currency desteği ve gelişmiş güvenlik özellikleri.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="IoT Projesi">
+            </div>
+            <div class="project-content">
+              <h3>IoT Akıllı Ev Sistemi</h3>
+              <p>Akıllı ev otomasyonu için IoT tabanlı kontrol sistemi. Sensörler ve uzaktan kontrol özellikleri.</p>
+              <div class="project-buttons">
+                <button class="btn-demo">Demo</button>
+                <button class="btn-code">Kod</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="all-projects-btn-container">
+          <button class="all-projects-btn">Tüm Projelerim</button>
+        </div>
       </div>
 
+      <div class="contact" id="contact">
+        <h1 class="gradient-text">İletişime Geçin</h1>
+        <h2 class="contact-text">Benimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz</h2>
+        
+        <div class="contact-container">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Telefon</h3>
+            <p>+90 555 123 45 67</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>E-posta</h3>
+            <p>deniz@example.com</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Adres</h3>
+            <p>İstanbul, Türkiye</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Instagram</h3>
+            <p>@denizbaranaykul</p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

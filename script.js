@@ -1,28 +1,3 @@
-const slides = document.querySelector(".slides");
-const images = document.querySelectorAll(".slides img");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-
-let index = 0;
-
-function showSlide(i) {
-  if (i < 0) {
-    index = images.length - 1;
-  } else if (i >= images.length) {
-    index = 0;
-  } else {
-    index = i;
-  }
-  slides.style.transform = `translateX(${-index * 100}%)`;
-}
-
-
-// Otomatik geçiş (3 sn)
-setInterval(() => {
-  showSlide(index + 1);
-}, 9000);
-
-
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -31,4 +6,28 @@ window.addEventListener("scroll", () => {
   } else {
     header.classList.remove("scrolled");
   }
+});
+
+// Smooth scroll fonksiyonu
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
+
+// Navbar linklerine click event listener ekle
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.liste a');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      scrollToSection(targetId);
+    });
+  });
 });
